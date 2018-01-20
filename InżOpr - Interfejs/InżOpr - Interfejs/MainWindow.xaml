@@ -1,0 +1,154 @@
+﻿<Window x:Name="Interfejs" x:Class="InżOpr___Interfejs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InżOpr___Interfejs"
+        mc:Ignorable="d"
+        Title="Interfejs" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Witaj Jan Kwiatkowski!" HorizontalAlignment="Left" Margin="336,10,0,0" VerticalAlignment="Top" Height="38" Width="328" Panel.ZIndex="3" Background="#FF76E4D0"/>
+
+        <TabControl HorizontalAlignment="Left" Height="570" VerticalAlignment="Top" Width="792" Background="{x:Null}" BorderBrush="{x:Null}">
+            <TabItem Header="Pracownicy" Margin="10,10,-10,-28" Width="100" BorderBrush="#FF7E3434">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FF1D67D1" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF1DA8D1" Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="46*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="111*"/>
+                        <ColumnDefinition Width="671*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid HorizontalAlignment="Left" Height="495" Margin="10,0,0,0" VerticalAlignment="Top" Width="91" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+                        <Button Content="Dodaj" Margin="10,12,10,424" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_3"/>
+                        <Button Content="Edytuj" Margin="10,76,10,360" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button Content="Usuń" Margin="10,140,10,296" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button Content="Wyświetl" Margin="10,204,10,232" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Background="#FFE8F303"/>
+                    </Grid>
+                    <Grid Grid.Column="1" HorizontalAlignment="Left" Height="485" Margin="1,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="651" Background="#FF76E4D0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="6*"/>
+                            <RowDefinition Height="91*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80*"/>
+                            <ColumnDefinition Width="190*"/>
+                            <ColumnDefinition Width="190*"/>
+                            <ColumnDefinition Width="191*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="     ID" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Grid.Row="1" Margin="0,15,0,0"/>
+                        <Label Content="Imię" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="69,15,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Nazwisko" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="89" FontWeight="Bold" FontSize="16" Margin="49,15,0,0" Grid.Column="2" Grid.Row="1"/>
+                        <Label Content="Stanowisko" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" FontWeight="Bold" FontSize="16" Margin="46,15,0,0" Grid.Column="3" Grid.Row="1"/>
+                        <Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="25,45,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                        <Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="25,75,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                        <Label Content="Jan" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="69,45,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Kwiatkowski" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="42,45,0,0" Grid.Column="2" Grid.Row="1"/>
+                        <Label Content="Kierownik" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="52,45,0,0" Grid.Column="3" Grid.Row="1"/>
+                        <Label Content="Adam" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="59,75,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Konopka" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="56,75,0,0" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="3.058,0.833"/>
+                        <Label Content="Kierowca" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="56,75,0,0" Grid.Column="3" Grid.Row="1"/>
+                        <Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="25,105,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                        <Label Content="Marek" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="58,105,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Pasikonik" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="53,105,0,0" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="3.058,0.833"/>
+                        <Label Content="Kierowca" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="56,105,0,0" Grid.Column="3" Grid.Row="1"/>
+                        <Label Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="25,135,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                        <Label Content="Elżbieta" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="54,135,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Buhaj" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="65,135,0,0" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="3.058,0.833"/>
+                        <Label Content="Księgowa" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="56,135,0,0" Grid.Column="3" Grid.Row="1"/>
+                        <Label Content="Pracownicy:" HorizontalAlignment="Left" Margin="139,0,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2"/>
+                        <Label Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="25,165,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                        <Label Content="Jan" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="69,165,0,0" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Kowalski" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="55,165,0,0" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="3.058,0.833"/>
+                        <Label Content="Kierowca" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="56,165,0,0" Grid.Column="3" Grid.Row="1"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pojazdy" Margin="130,10,-130,-27" Width="100" BorderBrush="#FFA5AA33">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                        <GradientStop Color="#FFA5AA33" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFA5AA33" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Rozkłady jazdy" Margin="-80,10,80,-27" Width="100" BorderBrush="#FF3C933C">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                        <GradientStop Color="#FF773C93" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF3C933C" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="669*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Background="#FF1DA8D1" Margin="0,0,0,0" Grid.ColumnSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="46*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="111*"/>
+                            <ColumnDefinition Width="671*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="485" Margin="1,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="651" Background="#FF76E4D0">
+                            <Label Content="Rozkład jazdy:" HorizontalAlignment="Left" Margin="247,52,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+                            <ComboBox x:Name="x" HorizontalAlignment="Left" Margin="266,96,0,0" VerticalAlignment="Top" Width="120"/>
+                            <Label Content="Przystanek" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="108" FontWeight="Bold" FontSize="16" Margin="93,159,0,0"/>
+                            <Label Content="Godz. odjazdu/przybycia" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="202" FontWeight="Bold" FontSize="16" Margin="222,159,0,0"/>
+                            <Label Content="Koszt pełnej trasy" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="144" FontWeight="Bold" FontSize="16" Margin="452,159,0,0"/>
+                            <Label Content="Olsztyn" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="103,194,0,0"/>
+                            <Label Content="09:00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="299,194,0,0"/>
+                            <Label Content="25 PLN" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="493,194,0,0"/>
+                            <Label Content="Ostróda" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="103,224,0,0"/>
+                            <Label Content="09:30" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="299,224,0,0" RenderTransformOrigin="3.058,0.833"/>
+                            <Label Content="20 PLN" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="493,224,0,0"/>
+                            <Label Content="Iława" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="113,254,0,0"/>
+                            <Label Content="10:05" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="299,254,0,0" RenderTransformOrigin="3.058,0.833"/>
+                            <Label Content="15PLN" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="493,254,0,0"/>
+                            <Label Content="Toruń" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="109,284,0,0"/>
+                            <Label Content="11:50" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="88" FontWeight="Bold" FontSize="16" Margin="299,284,0,0" RenderTransformOrigin="3.058,0.833"/>
+                            <Label Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="103" FontWeight="Bold" FontSize="16" Margin="512,284,0,0"/>
+                            <Label Content="ID: 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="69" FontWeight="Bold" FontSize="16" Margin="391,88,0,0"/>
+                            <Label Content="Ważny od: 10.01.2018" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="189" FontWeight="Bold" FontSize="16" Margin="235,118,0,0"/>
+                            <Label Content="Usunięto pomyślnie!" HorizontalAlignment="Left" Margin="213,13,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#FFD1FF00"/>
+
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Height="495" Margin="10,0,0,0" VerticalAlignment="Top" Width="91" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+                            <Button Content="Dodaj" Margin="10,12,10,424" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_2"/>
+                            <Button Content="Edytuj" Margin="10,76,10,360" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                            <Button Content="Usuń" Margin="10,140,10,296" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                            <Button Content="Wyświetl" Margin="10,204,10,232" VerticalAlignment="Center" Width="71" Height="59" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Background="#FFE8F303"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Wyloguj" HorizontalAlignment="Left" Margin="669,10,0,0" VerticalAlignment="Top" Width="100" Height="38"/>
+
+    </Grid>
+</Window>
